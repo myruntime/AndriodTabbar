@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wechat</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_game">游戏</string>
+    <string name="tab_set">设置</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
