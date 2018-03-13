@@ -26,6 +26,7 @@ import com.app.zhl.demo.Game.GameFragment;
 import com.app.zhl.demo.Home.HomeFragment;
 import com.app.zhl.demo.R;
 import com.app.zhl.demo.Set.SetFragment;
+import com.app.zhl.demo.Tools.Instance;
 
 
 import java.util.ArrayList;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (hasKitKat() && !hasLollipop()) {
 
-            sqzz.isImmersive = true;
+            Instance.isImmersive = true;
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         } else if (hasLollipop()) {
             Window window = getWindow();
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
-            sqzz.isImmersive = true;
+            Instance.isImmersive = true;
         }
 
     }

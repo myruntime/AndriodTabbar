@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.app.zhl.demo.Main.sqzz;
 import com.app.zhl.demo.R;
+import com.app.zhl.demo.Tools.Instance;
 import com.bacy.view.titlebar.TitleBar;
 
 /**
@@ -35,7 +35,7 @@ public class GameFragment extends Fragment {
 
     private void initNavbar(View view) {
         final TitleBar titleBar = (TitleBar) view.findViewById(R.id.title_bar_game);
-        titleBar.setImmersive(sqzz.isImmersive);
+        titleBar.setImmersive(Instance.isImmersive);
         titleBar.setBackgroundColor(Color.parseColor("#64b4ff"));
         titleBar.setTitle("游戏");
         titleBar.setTitleColor(Color.WHITE);
