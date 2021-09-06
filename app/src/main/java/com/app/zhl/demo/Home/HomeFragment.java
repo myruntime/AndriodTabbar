@@ -1,4 +1,4 @@
-package com.app.zhl.demo.Home;
+﻿package com.app.zhl.demo.Home;
 
 
 import android.content.Intent;
@@ -63,7 +63,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         if (v.getId() == R.id.pushBtn) {
             Intent intent = new Intent();
             intent.setClass(this.getActivity(),ListActivity.class);
-            startActivity(intent);
+             startActivity(intent);
         }
 
     }
